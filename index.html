@@ -257,29 +257,35 @@
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-4 title-section">
 							<h2 class="text-uppercase">
-								Send <br>
-								Us <br>
-								Message
+								Create <br>
+								Now! 
 							</h2>
 							<p>
-								We won’t send any kind of spam
+								Your own personal tune.
 							</p>
 						</div>
 						<div class="col-lg-8">
-								<form id="myForm" action="mail.php" method="post" class="contact-form">
-									<div class="row justify-content-center">
+							<script type="text/javascript">var submitted=false;</script>
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted){$('#fthx').html('Got it! Thank you, '+$('#fname').val()+'!' );$('#ftel').val('');$('#ftext').val('');$('#femail').val('');$('#fname').val('');}"></iframe>
+							<form action="https://docs.google.com/forms/d/e/1FAIpQLScTGwUFFJ1QeljzWRIytdHF_SxFdpcYJrQ0HvlcxUYOGsqi1w/formResponse" method="POST" id="mG61Hd" class="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
+                        		<div class="row justify-content-center">
 										<div class="col-lg-6">
-											<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-20" required="" type="text">
-
-											<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-20" required="" type="email">
-
-											<input name="phone" placeholder="Enter phone number"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" class="common-input mt-20" required="" type="tel">
+											<input id="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-20" required type="text" name="entry.2005620554">
+											<input id="femail" required type="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-20" name="entry.1045781291">
+											<input id="keywords" name="entry.1166974658" placeholder="Enter keywords"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter keywords'" class="common-input mt-20" type="text">					
 										</div>
 										<div class="col-lg-6">
-											<textarea class="common-textarea mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-
-											<button class="primary-btn d-inline-flex align-items-center mt-20"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> <br>
-											<div class="alert-msg"></div>
+											<textarea class="common-textarea mt-20" id="ftext" placeholder="Tell us your Story" name="entry.839337160" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tell us your Story'" required></textarea>
+											<!--<textarea id="pushToken" class="js-subscription-json hid" type="text" ></textarea>-->
+											<!--<span id="fthx" class="hid"></span>-->
+											<label for="cars">Choose an instrument:</label>
+											<select id="instrument" name="entry.1984977102">
+											  <option value="Piano">Piano</option>
+											  <option value="Guitar">Guitar</option>
+											  <option value="Electronic">Electronic</option>
+											</select> 
+											<button class="primary-btn d-inline-flex align-items-center mt-20" onclick="submitted=true"><span class="mr-10">Create my tune</span><span class="lnr lnr-arrow-right"></span></button> <br>
+											<div id="fthx" class="alert-msg"></div>
 										</div>
 									</div>
 								</form>
@@ -288,7 +294,6 @@
 				</div>
 			</section>
 			<!-- End contact Area -->
-
 
 			<!-- Strat Footer Area -->
 
