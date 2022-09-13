@@ -275,22 +275,41 @@
 											<input id="main" name="entry.932231184" placeholder="Enter main keywords"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter main keywords'" class="common-input mt-20" type="text">	<input id="secondary" name="entry.1484756160" placeholder="Enter secondary keywords"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter secondary keywords'" class="common-input mt-20" type="text">					
 										</div>
 										<div class="col-lg-6">
-											<textarea class="common-textarea mt-20" id="ftext" placeholder="Tell us your Story" name="entry.210928057" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tell us your Story'" required></textarea>
+											<textarea class="common-textarea mt-20" id="ftext" placeholder="Tell us your Story" name="entry.210928057" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tell us your Story'" required></textarea><br>
 											<!--<textarea id="pushToken" class="js-subscription-json hid" type="text" ></textarea>-->
 											<!--<span id="fthx" class="hid"></span>-->
-											<label for="instruments">Choose an instrument:</label>
-											<select id="instrument" name="entry.1577525026">
-											  <option value="Piano">Piano</option>
-											  <option value="Guitar">Guitar</option>
-											  <option value="Electronic">Electronic</option>
-											</select>
-                                
-                                            <select id="scale" name="entry.1134490887">
-											  <option value="Major">Major</option>
-											  <option value="Minor">Minor</option>
-											  <option value="Remix">Remix</option>
-											</select>
-                                            
+                                            <div class="container">
+					                           <div class="row">
+                                                    <div class="col-lg-4 col-md-4 no-padding">
+                                                        <label for="instruments">Instrument:</label>
+                                                        <select id="instrument" name="entry.1577525026">
+                                                          <option value="Piano">Piano</option>
+                                                          <option value="Guitar">Guitar</option>
+                                                          <option value="Electronic">Electronic</option>
+                                                        </select>
+                                                        <br>
+                                                    </div>
+                                                
+                                                    <div class="col-lg-4 col-md-4 no-padding">
+                                                        <label for="scale">Scale:</label>
+                                                        <select id="scale" name="entry.1134490887">
+                                                         <option value="Major">Major</option>
+                                                         <option value="Minor">Minor</option>
+                                                         <option value="Remix">Remix</option>
+                                                        </select>
+                                                        <br>
+                                                    </div>
+                                                   
+                                                    <div class="col-lg-4 col-md-4 no-padding">
+                                                        <label for="scale">Words:</label>
+                                                        <select id="scale" name="entry.1032847514">
+                                                         <option value="Words">Words</option>
+                                                         <option value="No words">No words</option>
+                                                        </select>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
 											<button class="primary-btn d-inline-flex align-items-center mt-20" onclick="submitted=true"><span class="mr-10">Create my tune</span><span class="lnr lnr-arrow-right"></span></button> <br>
 											<div id="fthx" class="alert-msg"></div>
 										</div>
